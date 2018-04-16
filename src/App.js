@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import './App.css';
 
+// Have the ability to add notes to the list
 
 
 const Note = (note) => {
@@ -15,23 +16,11 @@ const Note = (note) => {
     )
 }
 
-class actionHandler extends React.Component {
-    state = {}
-    render() {
-        return (
-            <div>
-                Hello
-      </div>
-        )
-    }
-}
-
 const Notes = (props) => {
 
     return (
         <div>
             <h2>Notes</h2>
-
             {props.notes.map(note => <Note key={note.id}   {...note} />)}
         </div>
     )
